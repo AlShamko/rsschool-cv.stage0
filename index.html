@@ -3,118 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/icon.svg" />
-    <title>cv</title>
   </head>
 
   <body>
     <header class="header">
       <div class="container">
         <nav class="nav">
-         <ul class="nav-list">
-            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-            <li class="nav-item"><a href="#sammary" class="nav-link">Summary</a> </li>
-            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-            <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-           <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-           <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
-          </ul>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#contacts" class="nav-link">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a href="#summary" class="nav-link">Summary</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#code" class="nav-link">Code</a>
+              </li>
+              <li class="nav-item">
+                <a href="#courses" class="nav-link">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#education" class="nav-link">Education</a>
+              </li>
+              <li class="nav-item">
+                <a href="#english" class="nav-link">English</a>
+              </li>
         </nav>
       </div>
     </header>
 
     <main class="main">
-      <div class="profile" id="Profile">
-          <img  class="foto" src="assets/photo1.jpg" height="200px" width="200px" alt="avatar">
+      <div class="container">
+        <div class="title">
+          <div class="title-image">
+            <img src="assets/photo1.jpg" alt="avatar" />
+          </div>
+          <div class="title-text">
+            <h1 class="title-name">Aleksandr Shamko</h1>
+            <h3 class="title-job">Junior Front-End Developer</h3>
+          </div>
+        </div>
+        <div class="main-container">
+          <section id="contacts" class="section">
+            <div class="title-section">Contacts</div>
+            <ul class="section-text-list">
+              <li>Poznan, Poland</li>
+              <li>
+                Email:<a href="shamkoag@gmail.com">shamkoag@gmail.com</a>
+              </li>
+              <li>
+                Github:<a href="https://github.com/AlShamko">AlShamko</a>
+              </li>
+              <li>
+                Telegram:<a href="https://t.me/Aleksandr_Shamko">@Aleksandr_Shamko</a>
+              </li>                
+              <li>Discord:<a href=""></a></li>
+            </ul>
+          </section>
+          <section id="summary" class="section">
+           <div class="title-section">Summary</div>
+           <p class="summary-text">
+              I like programming. It is fascinating and interesting. I have a
+              main job, programming is a hobby for me. I have completed
+              several training projects and now I would like to take part in
+              the creation of a real JavaScript project. My goal is to learn a
+              pure JavaScript at a good level and learn the React library. I
+              will be glad to join the creation of open source projects. I
+              would like to work under the guidance of an experienced
+              developer to gain practical experience.
+            </p>
+          </section>
+          <section id="skills" class="section">
+            <div class="title-section">Skills</div>
+            <ul class="section-text-list">
+              <li>Web-development: <span> TML5, CSS3, JavaScrip</span>H</li>
+              <li>Frameworks and libraries: <span>React</span></li>
+              <li>Version control: <span> GIT, Github</span></li>
+              <li>Graphics: <span>Figma</span></li>
+            </ul>
+          </section>
+          <section id="code">
+            <div class="title-section" class="section">Code</div>
+            <code class="code-text"> 
+              function factorial(n) <br />if(n < 0) return null; if (n <= 1)
+              return 1; return n * factorial(n-1); }
+            </code>
+          </section>
+          <section id="courses" class="section">
+            <div class="title-section">Courses</div>
+            <ul class="section-text-list">
+              <li>Hexlet - <span>JavaScript for beginner</span></li>
+              <li>
+                Udemy - <span>Web Development By Doing: HTML / CSS</span>
+              </li>
+              <li>
+                Udemy - <span>React + Redux - Professional Development</span>                
+              </li>
+              <li>RS School - <span>Front-End Developer</span>
+              </li>
+            </ul>
+          </section>
+          <section id="projects" class="section">
+            <div class="title-section">Projects</div>
+              <ul class="section-text-list">
+                <li>CV</li>
+                <li>Verstka</li>
+                <li>Burger</li>
+              </ul>
+          </section>
+          <section id="education" class="section">
+            <div class="title-section">Education</div>
+              <ul class="section-text-list">
+                <li>Belarussion State University</li>
+                <li>RS School</li>
+              </ul>
+          </section>
+          <section id="english" class="section">
+            <div class="title-section">English</div>
+            <div class="english-text">
+              <p>B1 - Pre-Intermediate</p>
+            </div>
+          </section>
       </div>
-      <section>
-        <section-title>
-          <h1>Shamko Aleksandr</h1>
-          <h3>Junior Front-End Developer</h3>
-        </section-title>
-      </section>
-      <section class="section" id="Contacts">
-        <section-title>
-          <h3>Contacts</h3>
-        </section-title>
-          <ul>
-            <li>Poznan, Poland </li>
-            <li>Email:<a href="shamkoag@gmail.com">shamkoag@gmail.com</a></li>
-            <li>Github:<a href=""></a></li>
-            <li>Telegram:<a href=""></a></li>
-            <li>Discord:<a href=""></a></li>
-          </ul>
-      </section>
-      <section class="section" id="Summary">
-        <section-title>
-          <h3>Summary</h3>
-        </section-title>
-          <p>I like programming. It is fascinating and interesting. I have a main job, programming is a hobby for me. I have completed several training projects and now I would like to take part in the creation of a real JavaScript project. My goal is to learn a pure JavaScript at a good level and learn the React library. I will be glad to join the creation of open source projects. I would like to work under the guidance of an experienced developer to gain practical experience.</p>
-        </section>
-      <section class="section" id="Slills">
-        <section-title>
-          <h3>Skills</h3>
-        </section-title>
-          <ul>
-            <li>Web-development: HTML5, CSS3, JavaScrip</li>
-            <li>Frameworks and libraries: React</li>
-            <li>Version control: GIT, Github</li>
-            <li>Graphics: Figma</li>
-          </ul>
-      </section>
-      <section class="section" id="Code">
-        <section-title>
-          <h3>Code</h3>
-        </section-title>
-          <p>function factorial(n) {</p>
-          <p>if(n < 0) return null;</p>
-          <p>if (n <= 1) return 1;</p>
-          <p>return n * factorial(n-1);</p>
-          <p>}</p>
-      </section>
-      <section class="section" id="Courses">
-        <section-title>
-          <h3>Courses</h3>
-        </section-title>
-        <ul>
-          <li>Hexlet - JavaScript for beginner</li>
-          <li>Udemy - Web Development By Doing: HTML / CSS</li>
-          <li>Udemy - React + Redux - Professional Development</li>
-          <li>RS School</li>
-        </ul>
-      </section>
-      <section class="section" id="Projects">
-        <section-title>
-          <h3>Projects</h3>
-        </section-title>
-        <ul>
-          <li>CV</li>
-          <li>Verstka</li>
-          <li>Game</li>
-        </ul>
-      </section>
-      <section class="section" id="Education">
-        <section-title>
-          <h3>Education</h3>
-        </section-title>
-        <ul>
-          <li>Belarussion State University</li>
-          <li>RS School</li>
-        </ul>
-      </section>
-      <section class="section" id="English">
-        <section-title>
-          <h3>English</h3>
-        </section-title>
-        <p>B1 - Pre-Intermediate</p>
-      </section>
     </main>
     <footer class="footer">
-      <div>
-        <h1>Footer</h1>
+      <div class="container">
+        <div class="footer-text">
+          © 2022 
+        </div>
+        <a href='https://rs.school/js/'><img src="assets/rs_school.svg" alt="logo" class="rss"></a>
       </div>
     </footer>
   </body>
